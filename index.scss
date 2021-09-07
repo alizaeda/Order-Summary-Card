@@ -1,0 +1,135 @@
+// vars
+$pale-blue: var(--pale-blue);
+$bright-blue: var(--bright-blue);
+$very-pale-blue: var(--very-pale-blue);
+$desaturated-blue: var(--desaturated-blue);
+$dark-blue: var(--dark-blue);
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  background-color: $pale-blue;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  height: 700px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #fff;
+  .card-top {
+    img {
+      border-radius: 20px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+  .content {
+    color: $dark-blue;
+    margin-top: 40px;
+    padding: 0 40px;
+    h1 {
+      font-weight: 900;
+      font-size: 1.8em;
+    }
+    p {
+      padding: 15px 0;
+      font-weight: 400;
+      color: $desaturated-blue;
+    }
+    .details {
+      color: $dark-blue;
+      background-color: $very-pale-blue;
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+      padding: 10px 0;
+      a {
+        flex: auto;
+        color: $bright-blue;
+      }
+      p {
+        color: $dark-blue;
+        font-weight: 900;
+        span {
+          color: $desaturated-blue;
+          display: inline-block;
+          // padding: 5px 0;
+          font-weight: 500;
+        }
+      }
+      img {
+        padding: 0 20px;
+      }
+    }
+    .buttons {
+      margin-top: 30px;
+      .btn {
+        display: block;
+        border: 0;
+        cursor: pointer;
+        padding: 1rem;
+        width: 100%;
+        border-radius: 15px;
+        font-size: 16px;
+
+        &:first-of-type {
+          margin-bottom: 20px;
+          background-color: $bright-blue;
+          color: $very-pale-blue;
+          font-weight: 700;
+          font-size: 16px;
+          box-shadow: 0px 10px 20px -9px #3023cc;
+        }
+        &:nth-of-type(2) {
+          background-color: #fff;
+          color: $desaturated-blue;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+/* Footer */
+footer {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translate(-50%);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/* Footer */

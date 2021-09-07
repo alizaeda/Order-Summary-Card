@@ -1,0 +1,156 @@
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  background-color: var(--pale-blue);
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 450px;
+  height: 700px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.card .card-top img {
+  border-radius: 20px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.card .content {
+  color: var(--dark-blue);
+  margin-top: 40px;
+  padding: 0 40px;
+}
+
+.card .content h1 {
+  font-weight: 900;
+  font-size: 1.8em;
+}
+
+.card .content p {
+  padding: 15px 0;
+  font-weight: 400;
+  color: var(--desaturated-blue);
+}
+
+.card .content .details {
+  color: var(--dark-blue);
+  background-color: var(--very-pale-blue);
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+  padding: 10px 0;
+}
+
+.card .content .details a {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  color: var(--bright-blue);
+}
+
+.card .content .details p {
+  color: var(--dark-blue);
+  font-weight: 900;
+}
+
+.card .content .details p span {
+  color: var(--desaturated-blue);
+  display: inline-block;
+  font-weight: 500;
+}
+
+.card .content .details img {
+  padding: 0 20px;
+}
+
+.card .content .buttons {
+  margin-top: 30px;
+}
+
+.card .content .buttons .btn {
+  display: block;
+  border: 0;
+  cursor: pointer;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 15px;
+  font-size: 16px;
+}
+
+.card .content .buttons .btn:first-of-type {
+  margin-bottom: 20px;
+  background-color: var(--bright-blue);
+  color: var(--very-pale-blue);
+  font-weight: 700;
+  font-size: 16px;
+  -webkit-box-shadow: 0px 10px 20px -9px #3023cc;
+          box-shadow: 0px 10px 20px -9px #3023cc;
+}
+
+.card .content .buttons .btn:nth-of-type(2) {
+  background-color: #fff;
+  color: var(--desaturated-blue);
+  font-weight: 700;
+}
+
+/* Footer */
+footer {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+/* Footer */
